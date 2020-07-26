@@ -1,0 +1,19 @@
+#spring:
+#  datasource:
+#    url: jdbc:h2:mem:test
+#    driver-class-name: org.h2.Driver
+#
+#
+#  jpa:
+#    hibernate:
+#      ddl-auto: create
+#    properties:
+#      hibernate:
+##        show_sql: true
+#        format_sql: true
+
+# 스프링 부트에서 위에 설정 안해 줘도 test에서 자동으로 메모리 모드로 실행해준다.
+logging:
+  level:
+    org.hibernate.SQL: debug
+    org.hibernate.type: trace
